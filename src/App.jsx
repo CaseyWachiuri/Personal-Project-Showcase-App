@@ -20,6 +20,9 @@ function App() {
     },
   ]
 
+  // Destructuring the array
+  const { id, title, description } = projects;
+
   return (
     <>
     </>
