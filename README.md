@@ -4,7 +4,7 @@
 
 ### Installation Requirements
 ```
-git clone
+git clone https://github.com/CaseyWachiuri/Personal-Project-Showcase-App.git
 npm install
 ```
 
