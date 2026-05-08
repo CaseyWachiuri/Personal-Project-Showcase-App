@@ -1,4 +1,4 @@
-function SearchProjects() {
+function SearchProjects({ title }) {
   return (
     <>
     </>

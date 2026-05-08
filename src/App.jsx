@@ -40,6 +40,7 @@ function App() {
   return (
     <>
       <Header text={"Personal Project Showcase App"} />
+      <SearchBar title={title} />
     </>
   )
 }
