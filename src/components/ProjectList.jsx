@@ -1,5 +1,5 @@
 function ProjectList() {
-  const projectItem
+  // const projectItem
 
   return (
     <>

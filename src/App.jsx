@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
+import projects from '../db.json';
+import Header from './components/Header';
 
 function App() {
-  const projects = [
+  const data = [
     {
       id: 1,
       title: "Project 1",
@@ -20,10 +22,17 @@ function App() {
     },
   ]
 
+  // Initializing state handling
+  const [projects, setProjects] = useState("data");
+
+  // Fetch data from the database (later challenge)
+  //useEffect(() => {
+  //});
+
   // Destructuring the array
   const { id, title, description } = projects;
 
-  // Initializing state handling
+  // Search State handling
   const [searchProj, setSearchProj] = useState("");
 
   // Input change handler
@@ -31,7 +40,7 @@ function App() {
 
   return (
     <>
-      <p>Figure out if it displays anything</p>
+      <Header text={"Personal Project Showcase App"} />
     </>
   )
 }
