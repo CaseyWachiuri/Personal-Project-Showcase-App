@@ -27,10 +27,11 @@ function App() {
   const [searchProj, setSearchProj] = useState("");
 
   // Input change handler
-  
+
 
   return (
     <>
+      <p>Figure out if it displays anything</p>
     </>
   )
 }
