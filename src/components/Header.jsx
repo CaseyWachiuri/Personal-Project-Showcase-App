@@ -1,7 +1,7 @@
 function Header({ text }) {
   return (
     <>
-      <div className="bg-gray=200 rounded flex justify-center h6 items-center m-2">
+      <div className="border bg-red=800 rounded flex justify-center h6 items-center m-2">
         <h1>
           {text}
         </h1>
