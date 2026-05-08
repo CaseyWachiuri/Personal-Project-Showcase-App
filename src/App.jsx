@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -22,6 +22,12 @@ function App() {
 
   // Destructuring the array
   const { id, title, description } = projects;
+
+  // Initializing state handling
+  const [searchProj, setSearchProj] = useState("");
+
+  // Input change handler
+  
 
   return (
     <>
