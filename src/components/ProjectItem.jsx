@@ -1,9 +1,10 @@
-function ProjectItem({ id, title, description }) {
+function ProjectItem({ title, description }) {
+
   return (
-    <div>
-      <h3>title</h3>
-      <p>description</p>
-    </div>
+    <li>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </li>
   )
 }
 
