@@ -1,25 +1,9 @@
 import { useEffect, useState } from 'react'
-import projects from '../db.json';
-import Header from './components/Header';
+import projectData from './data/projects'
+import Header from './components/Header'
+import ProjectList from './components/ProjectList'
 
 function App() {
-  const data = [
-    {
-      id: 1,
-      title: "Project 1",
-      description: "A Clock App",
-    },
-    {
-      id: 2,
-      title: "Project 2",
-      description: "A Project List Display App",
-    },
-    {
-      id: 3,
-      title: "Project 3",
-      description: "A Spotify Playlist Organiser",
-    },
-  ]
 
   // Initializing state handling
   const [projects, setProjects] = useState("data");
@@ -28,7 +12,7 @@ function App() {
   //useEffect(() => {
   //});
 
-  // Destructuring the array
+  // Destructuring the projects array
   const { id, title, description } = projects;
 
   // Search State handling
@@ -40,7 +24,10 @@ function App() {
   return (
     <>
       <Header text={"Personal Project Showcase App"} />
-      <SearchBar title={title} />
+      {/* Focus on generating the list for now */}
+      {/* Prop to handle outputting the list */}
+      <ProjectList id={id} title={title} description={description} />
+      {/* < SearchBar title={title} /> */}
     </>
   )
 }
