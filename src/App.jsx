@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import projectData from './data/projects'
 import Header from './components/Header'
 import ProjectList from './components/ProjectList'
+import AddProject from './components/AddProject';
 
 function App() {
 
@@ -21,8 +22,7 @@ function App() {
   return (
     <>
       <Header text={"Personal Project Showcase App"} />
-      {/* Focus on generating the list for now */}
-      {/* Prop to handle outputting the list */}
+      <AddProject />
       <ProjectList projects={projects} />
       {/* < SearchBar title={title} /> */}
     </>
