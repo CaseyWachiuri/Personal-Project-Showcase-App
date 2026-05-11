@@ -8,15 +8,19 @@ function ProjectList({ projects }) {
   }
 
   return (
-    <div className="border bg-red=800 rounded flex-col justify-center h6 items-center m-2">
-      <input className="border flex"
-        type='search'
-        value={name}
-        onChange={handleSearch}
-        placeholder="search projects" />
-      <ul>
-        {projectItems}
-      </ul>
+    <div className="border bg-gray-100 rounded-l flex flex-col justify-around m-2 p-2">
+      <div className="border bg-gray-100 rounded-l mb-2 px-1">
+        <input
+          type='search'
+          value={name}
+          onChange={handleSearch}
+          placeholder="search projects" />
+      </div>
+      <div className="border p-2">
+        <ul>
+          {projectItems}
+        </ul>
+      </div>
     </div>
   )
 }

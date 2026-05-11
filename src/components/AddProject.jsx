@@ -23,27 +23,29 @@ function AddProject() {
   console.log(description);
 
   return (
-    <>
-      <form className="border bg-red=800 rounded flex-col justify-center h6 items-center m-2"
+    <div className="border bg-gray-100 flex flex-col justify-around rounded-l m-2 p-2">
+      <h2 className="font-bold text-2xl">Add Project</h2>
+      <form
         onSubmit={handleSubmit}
       >
-        <div className="">
-          <label>Title</label>
-          <input
+        <div className="flex flex-col my-4">
+          <label className="font-medium text-lg">Title</label>
+          <input className="border rounded-l mt-1 p-2"
             type="text"
             onChange={handleTitleChange}
           />
         </div>
-        <div className="">
-          <label>Description</label>
+        <div className="flex flex-col">
+          <label className="font-medium text-lg">Description</label>
           <input
+            className="border rounded-l mt-1 p-2"
             type="text"
             onChange={handleDescriptionChange}
           />
         </div>
-        <button type="submit">Add</button>
+        <button type="submit" className="border bg-white-800 rounded-l font-medium my-3 px-8">Add</button>
       </form>
-    </>
+    </div >
   )
 }
 
