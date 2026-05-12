@@ -1,6 +1,12 @@
 ### By Casey Waweru
 
+## Live link
+```
+https://personal-project-showcase-app-three.vercel.app/
+```
+
 ## Description
+A Simple Project to showcase projects that have been built. It allows you to filter through the projects and add projects
 
 ### Installation Requirements
 ```
