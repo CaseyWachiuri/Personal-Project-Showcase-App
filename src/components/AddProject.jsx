@@ -14,13 +14,12 @@ function AddProject() {
     setTitle(e.target.value)
   }
 
-  console.log(title);
 
   function handleDescriptionChange(e) {
     setDescription(e.target.value)
   }
 
-  console.log(description);
+  console.log(`title: ${title} , description: ${description}`);
 
   return (
     <div className="border bg-gray-100 flex flex-col justify-around rounded-l m-2 p-2">
